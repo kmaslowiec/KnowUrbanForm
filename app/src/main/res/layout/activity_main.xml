@@ -198,6 +198,65 @@
 
         <!-- END OF QUESTION 3 -->
 
+        <!-- QUESTION 4 -->
+
+
+        <!-- END OF QUESTION 4 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/margin"
+            android:background="@color/line"
+
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/upper_margin"
+            android:text="@string/question_four"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/question" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_question_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q_four_ans_one"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q_four_ans_two"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q_four_ans_three"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/ans_four_four_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q_four_ans_four"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
 
         <!-- RESULTS BUTTONS -->
         <LinearLayout

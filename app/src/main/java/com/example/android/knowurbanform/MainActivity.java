@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox three;
     private CheckBox four;
     private RadioGroup gr;
+    private RadioGroup gr2;
     private EditText txt;
     private Button submitButton;
     private Button resetButton;
@@ -123,6 +124,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * logic for the four question
+     */
+    public void fourQuestion() {
+        this.gr2 = findViewById(R.id.radio_group_question_four);
+        RadioButton rb = findViewById(R.id.ans_four_four_radio_button);
+        int id = rb.getId();
+
+        boolean result = gr2.getCheckedRadioButtonId() == id;
+        counter(result);
+
+    }
+
+    /**
      * counts the points
      *
      * @param v
@@ -132,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         firstQuestion();
         secondQuestion();
         threeQuestion();
+        fourQuestion();
         submitButton.setClickable(false);
         resetButton.setClickable(true);
         submitting();
@@ -156,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
     public void unCheckAll() {
         CheckBox[] allBoxes = {one, two, three, four};
         gr.clearCheck();
+        gr2.clearCheck();
         txt.setText(null);
 
         for (CheckBox unCheck : allBoxes) {
@@ -171,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitting() {
 
-        if (point == 3) {
+        if (point == 4) {
             Toast.makeText(this, "Bravo you got 15% discount", Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this, "We need to know better. Try again", Toast.LENGTH_SHORT).show();

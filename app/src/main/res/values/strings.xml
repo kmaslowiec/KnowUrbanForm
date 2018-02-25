@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!--Other-->
+    <!--OTHER-->
     <string name="app_name" translatable="false">Know Urban Form</string>
     <string name="good_luck">Good Luck!!!</string>
     <string name="hint">answer</string>
     <string name="web">http://urbanform.eu/</string>
-    <!--END-->
+    <!--END OF OTHER-->
 
+    <!-- HEADLIGHT AND INTRO -->
     <string name="headlight">get to know us better</string>
 
-    <string name="intro">Please try to answer below question.\nYou don\'t know us? That\'s the point!\nThis 5 minutes helps you to understand \n
+    <string name="intro">Please try to answer below questions.\nYou don\'t know us yet? That\'s the point!\nThis 2 minutes survey helps you to understand \n
         who we are and what we do.\nYou got perfect score?\nWe got 15% discount for you!
-
     </string>
+    <!-- END OF HEADLIGHT AND INTRO -->
 
 
-    <!--Question 1 -->
+    <!--QUESTION 1 -->
     <string name="question_one">Who is founder of Urban Form</string>
     <string name="q_one_ans_one" translatable="false">Maria Skłodowska-Curie</string>
     <string name="q_one_ans_two" translatable="false">Jakub Purol</string>
     <string name="q_one_ans_three" translatable="false">Albert Einstein</string>
     <string name="q_one_ans_four" translatable="false">Lech Walesa</string>
-    <!--END -->
+    <!--END OF QUESTION 1 -->
 
-    <!--Question 2 -->
+    <!--QUESTION 2 -->
     <string name="question_two">What materials do we use?</string>
     <string name="q_two_ans_one">Concrete</string>
     <string name="q_two_ans_two">Adamantium</string>
     <string name="q_two_ans_three">Wood</string>
     <string name="q_two_ans_four">Steel</string>
-    <!--END -->
+    <!--END END OF QUESTION 2 -->
 
-    <!--Question 3 -->
+    <!--QUESTION 3 -->
     <string name="question_three">In what city is our headquarter?</string>
+    <!--END END OF QUESTION 3 -->
 
+    <!--QUESTION 4 -->
+    <string name="question_four">We won prize for Inspiring Start in </string>
+    <string name="q_four_ans_one" translatable="false">1969</string>
+    <string name="q_four_ans_two" translatable="false">1989</string>
+    <string name="q_four_ans_three" translatable="false">1410</string>
+    <string name="q_four_ans_four" translatable="false">2017</string>
+    <!-- END OF QUESTION -->
 
-    <!--END -->
-
-    <!--Question 4 -->
-    <string name="question_four">What is platform?</string>
-    <string name="part1">A platform is basically the </string>
-    <string name="part2">or</string>
-    <string name="part3">environment </string>
-
-    <!--END -->
-
-    <!-- Result -->
-
+    <!-- RESULTS -->
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
-    <string name="score">Score</string>
+    <!-- END OF RESULTS -->
 
 </resources>
