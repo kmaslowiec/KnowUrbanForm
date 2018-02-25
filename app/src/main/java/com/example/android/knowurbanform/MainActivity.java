@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int point = 0;
+    private int point = 0;
     private CheckBox one;
     private CheckBox two;
     private CheckBox three;
@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // object should be always initialized below the line
-
+        this.gr = findViewById(R.id.radio_group_question_one);
+        this.gr2 = findViewById(R.id.radio_group_question_four);
         this.submitButton = findViewById(R.id.submit_button);
         this.resetButton = findViewById(R.id.reset_button);
         resetButton.setClickable(false);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
      * logic for the first question
      */
     public void firstQuestion() {
-        this.gr = findViewById(R.id.radio_group_question_one);
+
         RadioButton rb = findViewById(R.id.ans_one_two_radio_button);
         int id = rb.getId();
 
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         this.txt = findViewById(R.id.text_q_three);
         String answer = txt.getText().toString().toLowerCase();
 
-        if (answer.equals("szczecin") || answer.equals("szczecin ")) {
+        if (answer.trim().equalsIgnoreCase("szczecin")){
             counter(true);
         } else
             counter(false);
@@ -117,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
      * logic for the four question
      */
     public void fourQuestion() {
-        this.gr2 = findViewById(R.id.radio_group_question_four);
         RadioButton rb = findViewById(R.id.ans_four_four_radio_button);
         int id = rb.getId();
 
