@@ -2,7 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!--OTHER-->
     <string name="app_name" translatable="false">Know Urban Form</string>
-    <string name="good_luck">Good Luck!!!</string>
     <string name="hint">answer</string>
     <string name="web">http://urbanform.eu/</string>
     <!--END OF OTHER-->
@@ -48,5 +47,10 @@
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
     <!-- END OF RESULTS -->
+
+    <!-- TOASTS -->
+    <string name="great_job">Bravo you got 15% discount</string>
+    <string name="you_can_better">We need to know better. Try again</string>
+    <!-- END OF TOASTS -->
 
 </resources>

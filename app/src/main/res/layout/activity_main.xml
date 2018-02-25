@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.android.knowurbanform.MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,11 +13,9 @@
         android:orientation="vertical">
 
         <!-- HEADLIGHT LAYOUT -->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal">
 
             <ImageView
@@ -30,7 +26,6 @@
                 android:src="@drawable/urban_form_logo"
 
                 />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -45,7 +40,6 @@
 
 
         </RelativeLayout>
-
         <!-- END OF HEADLIGHT-->
 
         <!-- INTRO -->
@@ -78,7 +72,6 @@
             android:text="@string/question_one"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/question" />
-
 
         <RadioGroup
             android:id="@+id/radio_group_question_one"
@@ -115,7 +108,6 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
         </RadioGroup>
-
         <!-- END OF QUESTION 1 -->
 
         <!-- QUESTION 2 -->
@@ -136,7 +128,6 @@
             android:text="@string/question_two"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/question" />
-
 
         <CheckBox
             android:id="@+id/que_two_ans_one"
@@ -165,11 +156,9 @@
             android:layout_height="wrap_content"
             android:text="@string/q_two_ans_four"
             android:textAppearance="?android:textAppearanceMedium" />
-
         <!-- END OF QUESTION 2 -->
 
         <!-- QUESTION 3 -->
-
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -187,7 +176,6 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/question" />
 
-
         <EditText
             android:id="@+id/text_q_three"
             android:layout_width="match_parent"
@@ -195,14 +183,9 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:hint="@string/hint" />
-
         <!-- END OF QUESTION 3 -->
 
         <!-- QUESTION 4 -->
-
-
-        <!-- END OF QUESTION 4 -->
-
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -220,7 +203,6 @@
             android:text="@string/question_four"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/question" />
-
 
         <RadioGroup
             android:id="@+id/radio_group_question_four"
@@ -257,6 +239,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
         </RadioGroup>
+        <!-- END OF QUESTION 4 -->
 
         <!-- RESULTS BUTTONS -->
         <LinearLayout

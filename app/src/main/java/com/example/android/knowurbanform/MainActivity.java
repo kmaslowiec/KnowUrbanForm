@@ -10,14 +10,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Locale;
-
 
 public class MainActivity extends AppCompatActivity {
 
+    int point = 0;
     private CheckBox one;
     private CheckBox two;
     private CheckBox three;
@@ -28,19 +25,15 @@ public class MainActivity extends AppCompatActivity {
     private Button submitButton;
     private Button resetButton;
 
-
-    int point = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main); // object should be always initialized below the line
 
-        setContentView(R.layout.activity_main); // object should be always initialized below the method
         this.submitButton = findViewById(R.id.submit_button);
         this.resetButton = findViewById(R.id.reset_button);
         resetButton.setClickable(false);
-
 
     }
 
@@ -72,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             this.point--;
         }
-
 
     }
 
@@ -111,8 +103,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void threeQuestion() {
         this.txt = findViewById(R.id.text_q_three);
-
-
         String answer = txt.getText().toString().toLowerCase();
 
         if (answer.equals("szczecin") || answer.equals("szczecin ")) {
@@ -188,9 +178,9 @@ public class MainActivity extends AppCompatActivity {
     public void submitting() {
 
         if (point == 4) {
-            Toast.makeText(this, "Bravo you got 15% discount", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.great_job), Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "We need to know better. Try again", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getString(R.string.you_can_better), Toast.LENGTH_SHORT).show();
             unCheckAll();
             submitButton.setClickable(true);
             resetButton.setClickable(false);

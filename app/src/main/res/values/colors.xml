@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- APP COLORS -->
     <color name="colorPrimary">#000</color>
     <color name="colorPrimaryDark">#424242</color>
     <color name="colorAccent">#424242</color>
     <!-- END OF APP COLORS -->
 
-    <!-- general colors -->
+    <!-- GENERAL COLORS -->
     <color name="line">#000</color>
-    <color name="highlight">#E53935</color>
+    <!--END OF GENERAL COLORS-->
 
-    <!--END-->
-
-    <!--font-->
+    <!--FONT-->
     <color name="question">#000</color>
-    <!--END-->
-
+    <!--END OF FONT-->
 
 </resources>
