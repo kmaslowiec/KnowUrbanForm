@@ -8,64 +8,64 @@
     android:orientation="vertical"
     tools:context="com.example.android.knowurbanform.MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <!-- intro -->
+        <!-- HEADLIGHT LAYOUT -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/logo_margin"
+                android:onClick="website"
+                android:src="@drawable/urban_form_logo"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/headlight_top_padding"
+                android:text="@string/headlight"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/question"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <!-- END OF HEADLIGHT-->
+
+        <!-- INTRO -->
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/upper_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
+            android:gravity="center_horizontal"
+            android:text="@string/intro"
             android:textAppearance="?android:textAppearanceSmall"
-            android:text="@string/intro1"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:text="@string/intro2"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:text="@string/intro3"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:text="@string/intro4"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:text="@string/intro5"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:text="@string/intro6"
-            />
+            android:textColor="@color/question" />
+        <!-- END OF INTRO -->
 
-        <!-- Qurestion 1 -->
+        <!-- QUESTION 1 -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/line"
             android:layout_margin="@dimen/margin"
+            android:background="@color/line"
 
             />
 
@@ -73,13 +73,11 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/upper_margin"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/upper_margin"
             android:text="@string/question_one"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/question"
-            />
-
+            android:textColor="@color/question" />
 
 
         <RadioGroup
@@ -87,24 +85,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RadioButton
                 android:id="@+id/ans_one_one_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/q_one_ans_one"
                 android:textAppearance="?android:textAppearanceMedium" />
+
             <RadioButton
                 android:id="@+id/ans_one_two_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/q_one_ans_two"
                 android:textAppearance="?android:textAppearanceMedium" />
+
             <RadioButton
                 android:id="@+id/ans_one_three_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/q_one_ans_three"
                 android:textAppearance="?android:textAppearanceMedium" />
+
             <RadioButton
                 android:id="@+id/ans_one_four_radio_button"
                 android:layout_width="wrap_content"
@@ -114,14 +116,14 @@
 
         </RadioGroup>
 
-        <!-- END of question 1 -->
+        <!-- END OF QUESTION 1 -->
 
-        <!-- Question 2 -->
+        <!-- QUESTION 2 -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/line"
             android:layout_margin="@dimen/margin"
+            android:background="@color/line"
 
             />
 
@@ -129,13 +131,11 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/upper_margin"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/upper_margin"
             android:text="@string/question_two"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/question"
-            />
-
+            android:textColor="@color/question" />
 
 
         <CheckBox
@@ -166,28 +166,26 @@
             android:text="@string/q_two_ans_four"
             android:textAppearance="?android:textAppearanceMedium" />
 
-        <!-- END of question 2 -->
+        <!-- END OF QUESTION 2 -->
 
-        <!-- Question 3 -->
+        <!-- QUESTION 3 -->
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/line"
             android:layout_margin="@dimen/margin"
+            android:background="@color/line"
 
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/upper_margin"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/upper_margin"
             android:text="@string/question_three"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/question"
-            />
-
+            android:textColor="@color/question" />
 
 
         <EditText
@@ -195,123 +193,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:hint="@string/hint"
-            />
+            android:gravity="center_horizontal"
+            android:hint="@string/hint" />
 
-        <!-- END of question 3 -->
+        <!-- END OF QUESTION 3 -->
 
-        <!-- Question 4 -->
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/line"
-            android:layout_margin="@dimen/margin"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/upper_margin"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/question_four"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/question"
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:padding="@dimen/upper_padding"
-
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/upper_padding"
-                android:paddingTop="@dimen/fit_to_edit"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/part1"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/question"
-                />
-
-            <EditText
-                android:id="@+id/q_4_answer1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/upper_padding"
-                android:layout_gravity="center_horizontal"
-                android:hint="@string/hint"
-                android:textAppearance="?android:textAppearanceMedium"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/upper_padding"
-                android:paddingTop="@dimen/fit_to_edit"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/part2"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/question"
-                />
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="2dp"
-            android:layout_gravity="center_horizontal"
-            >
-
-            <EditText
-                android:id="@+id/q_4_answer2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/upper_padding"
-                android:layout_gravity="center_horizontal"
-                android:hint="@string/hint"
-                android:textAppearance="?android:textAppearanceMedium"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/fit_to_edit"
-                android:layout_marginLeft="@dimen/margin_between"
-                android:padding="@dimen/upper_padding"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/part3"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/question"
-
-                />
-
-
-
-        </LinearLayout>
-
-
-
-
-
-        <!-- END of question 4 -->
 
         <!-- RESULTS BUTTONS -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            >
-
+            android:orientation="horizontal">
 
 
             <Button
@@ -319,9 +212,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/upper_margin"
-                android:text="@string/submit"
                 android:onClick="displayResults"
-                />
+                android:text="@string/submit" />
+
             <Button
                 android:id="@+id/reset_button"
                 android:layout_width="wrap_content"
@@ -332,18 +225,7 @@
                 />
 
         </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/display"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/question"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:text=""
-
-            />
+        <!-- END OF RESULTS BUTTONS -->
 
     </LinearLayout>
 

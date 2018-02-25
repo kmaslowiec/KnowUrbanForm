@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- app styles-->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <!--END-->
+    <!-- APP COLORS -->
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#424242</color>
+    <!-- END OF APP COLORS -->
 
     <!-- general colors -->
     <color name="line">#000</color>
+    <color name="highlight">#E53935</color>
 
     <!--END-->
 

@@ -4,14 +4,16 @@
     <string name="app_name" translatable="false">Know Urban Form</string>
     <string name="good_luck">Good Luck!!!</string>
     <string name="hint">answer</string>
+    <string name="web">http://urbanform.eu/</string>
     <!--END-->
 
-    <string name="intro1">The app helps to prepare for Technical Interview</string>
-    <string name="intro2">Wrong answer gives -1 point, Correct +1</string>
-    <string name="intro3">Check boxes can have more than one correct answer</string>
-    <string name="intro4">Now are 3 questions.</string>
-    <string name="intro5">I will add more soon</string>
-    <string name="intro6">Enjoy !!!</string>
+    <string name="headlight">get to know us better</string>
+
+    <string name="intro">Please try to answer below question.\nYou don\'t know us? That\'s the point!\nThis 5 minutes helps you to understand \n
+        who we are and what we do.\nYou got perfect score?\nWe got 15% discount for you!
+
+    </string>
+
 
     <!--Question 1 -->
     <string name="question_one">Who is founder of Urban Form</string>
@@ -22,15 +24,15 @@
     <!--END -->
 
     <!--Question 2 -->
-    <string name="question_two">What is JIT compiler?</string>
-    <string name="q_two_ans_one">It is used to improve the performance.</string>
-    <string name="q_two_ans_two">Java Internal Timer. Prints the timer on screen</string>
-    <string name="q_two_ans_three">Reduces the amount of time needed for compilation.</string>
-    <string name="q_two_ans_four">Reset the app using System.reset() method</string>
+    <string name="question_two">What materials do we use?</string>
+    <string name="q_two_ans_one">Concrete</string>
+    <string name="q_two_ans_two">Adamantium</string>
+    <string name="q_two_ans_three">Wood</string>
+    <string name="q_two_ans_four">Steel</string>
     <!--END -->
 
     <!--Question 3 -->
-    <string name="question_three">The superclass for every class?</string>
+    <string name="question_three">In what city is our headquarter?</string>
 
 
     <!--END -->

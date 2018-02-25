@@ -1,4 +1,7 @@
 package com.example.android.knowurbanform;
+
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,17 +36,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main); // object should be always initialized below the method
-        String s = getResources().getString(R.string.good_luck);
-        Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
         this.submitButton = findViewById(R.id.submit_button);
         this.resetButton = findViewById(R.id.reset_button);
         resetButton.setClickable(false);
 
 
-
     }
 
+    /**
+     * connects ImageView with the web browser
+     *
+     * @param v
+     */
 
+    public void website(View v) {
+
+        Uri webpage = Uri.parse(getResources().getString(R.string.web));
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    /**
+     * increase the points if the answer is correct. Decrease if it is wrong.
+     *
+     * @param answer
+     */
 
     public void counter(boolean answer) {
 
@@ -56,9 +75,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * logic for the first question
+     */
     public void firstQuestion() {
         this.gr = findViewById(R.id.radio_group_question_one);
-        RadioButton rb = findViewById(R.id.ans_one_three_radio_button);
+        RadioButton rb = findViewById(R.id.ans_one_two_radio_button);
         int id = rb.getId();
 
         boolean result = gr.getCheckedRadioButtonId() == id;
@@ -66,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * logic for the second question
+     */
     public void secondQuestion() {
         // this enables to call the instance objects !!!
         this.one = findViewById(R.id.que_two_ans_one);
@@ -73,20 +98,23 @@ public class MainActivity extends AppCompatActivity {
         this.three = findViewById(R.id.que_two_ans_three);
         this.four = findViewById(R.id.que_two_ans_four);
 
-        if (one.isChecked() && three.isChecked()) {
+        if (one.isChecked() && three.isChecked() && four.isChecked()) {
             counter(true);
         } else
             counter(false);
 
     }
 
+    /**
+     * logic for the third question
+     */
     public void threeQuestion() {
         this.txt = findViewById(R.id.text_q_three);
 
 
         String answer = txt.getText().toString().toLowerCase();
 
-        if (answer.equals("object") || answer.equals("object ") || answer.equals("object class") ) {
+        if (answer.equals("szczecin") || answer.equals("szczecin ")) {
             counter(true);
         } else
             counter(false);
@@ -94,35 +122,41 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * counts the points
+     *
+     * @param v
+     */
     public void displayResults(View v) {
 
         firstQuestion();
         secondQuestion();
         threeQuestion();
-        TextView txt = findViewById(R.id.display);
-        String s = String.format(Locale.CANADA, "%s: %d", getResources().getString(R.string.score), point);
-        txt.setText(s);
         submitButton.setClickable(false);
         resetButton.setClickable(true);
+        submitting();
 
     }
 
+    /**
+     * resets the app
+     *
+     * @param v
+     */
     public void reset(View v) {
         this.point = 0;
         unCheckAll();
-        TextView txt = findViewById(R.id.display);
-        String s = String.format(Locale.CANADA, "%s: %d", getResources().getString(R.string.score), point);
-        txt.setText(s);
         submitButton.setClickable(true);
         resetButton.setClickable(false);
     }
 
+    /**
+     * unchecks all questions
+     */
     public void unCheckAll() {
-
         CheckBox[] allBoxes = {one, two, three, four};
         gr.clearCheck();
         txt.setText(null);
-
 
         for (CheckBox unCheck : allBoxes) {
             if (unCheck.isChecked()) {
@@ -131,4 +165,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    /**
+     * prints Toast based on the points
+     */
+    public void submitting() {
+
+        if (point == 3) {
+            Toast.makeText(this, "Bravo you got 15% discount", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "We need to know better. Try again", Toast.LENGTH_SHORT).show();
+            unCheckAll();
+            submitButton.setClickable(true);
+            resetButton.setClickable(false);
+        }
+
+    }
+
 }

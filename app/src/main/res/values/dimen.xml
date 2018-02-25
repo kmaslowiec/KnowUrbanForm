@@ -9,4 +9,8 @@
 
     <dimen name="fit_to_edit">10dp</dimen>
     <dimen name="upper_padding">3dp</dimen>
+
+    <dimen name="logo_margin">2dp</dimen>
+    <dimen name="headlight_top_padding">7dp</dimen>
+
 </resources>
