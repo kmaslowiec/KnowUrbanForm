@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--Other-->
+    <string name="app_name" translatable="false">Know Urban Form</string>
+    <string name="good_luck">Good Luck!!!</string>
+    <string name="hint">answer</string>
+    <!--END-->
+
+    <string name="intro1">The app helps to prepare for Technical Interview</string>
+    <string name="intro2">Wrong answer gives -1 point, Correct +1</string>
+    <string name="intro3">Check boxes can have more than one correct answer</string>
+    <string name="intro4">Now are 3 questions.</string>
+    <string name="intro5">I will add more soon</string>
+    <string name="intro6">Enjoy !!!</string>
+
+    <!--Question 1 -->
+    <string name="question_one">Who is founder of Urban Form</string>
+    <string name="q_one_ans_one" translatable="false">Maria Skłodowska-Curie</string>
+    <string name="q_one_ans_two" translatable="false">Jakub Purol</string>
+    <string name="q_one_ans_three" translatable="false">Albert Einstein</string>
+    <string name="q_one_ans_four" translatable="false">Lech Walesa</string>
+    <!--END -->
+
+    <!--Question 2 -->
+    <string name="question_two">What is JIT compiler?</string>
+    <string name="q_two_ans_one">It is used to improve the performance.</string>
+    <string name="q_two_ans_two">Java Internal Timer. Prints the timer on screen</string>
+    <string name="q_two_ans_three">Reduces the amount of time needed for compilation.</string>
+    <string name="q_two_ans_four">Reset the app using System.reset() method</string>
+    <!--END -->
+
+    <!--Question 3 -->
+    <string name="question_three">The superclass for every class?</string>
+
+
+    <!--END -->
+
+    <!--Question 4 -->
+    <string name="question_four">What is platform?</string>
+    <string name="part1">A platform is basically the </string>
+    <string name="part2">or</string>
+    <string name="part3">environment </string>
+
+    <!--END -->
+
+    <!-- Result -->
+
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="score">Score</string>
+
+</resources>

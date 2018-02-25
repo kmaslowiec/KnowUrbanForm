@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app styles-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--END-->
+
+    <!-- general colors -->
+    <color name="line">#000</color>
+
+    <!--END-->
+
+    <!--font-->
+    <color name="question">#000</color>
+    <!--END-->
+
+
+</resources>

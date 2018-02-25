@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin">16dp</dimen>
+    <dimen name="upper_margin">8dp</dimen>
+    <dimen name="intro_left_margin">5dp</dimen>
+    <dimen name="margin_between">2dp</dimen>
+
+
+    <dimen name="fit_to_edit">10dp</dimen>
+    <dimen name="upper_padding">3dp</dimen>
+</resources>
